@@ -1,0 +1,190 @@
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+
+body{
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+}
+
+#full-height{
+  height: 100vh;
+}
+
+.d-none{
+  display: none;
+}
+
+.login{
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  flex-direction: row;
+  overflow: hidden;
+  background-image: url("./Panel/Login/login-page.jpg");
+  background-cover: center;
+  background-position: right;
+}
+
+.login-input{
+  background-color: rgba(255,255,255,.09);
+  border-color: rgba(255,255,255,.09);
+  color: rgba(255,255,255,.87);
+}
+
+.login-input:focus{
+  background-color: rgba(255,255,255,.09);
+  border-color: rgba(255,255,255,.09);
+  color: rgba(255,255,255,.87);
+}
+
+.login-left{
+  background-color: #24252F;
+}
+
+.login-right{
+  background-color:#124A6D;
+}
+
+@media only screen and (max-width: 990px) {
+ #log-reg{
+       display: none;
+ } 
+}
+
+
+/* DashBoard */
+
+.dashboard{
+  width: 100vw;
+  margin: 0;
+}
+
+.l-navbar{
+  height: 100vh;
+  max-width: 13%;
+}
+
+
+
+/* Navbar */
+
+
+.lNavbar{
+  height: 100vh;
+  background-color: #2A2B36;
+  border-right: 1px solid #2A2B36;
+}
+
+.lnavbar-topic{
+  padding: 16px 0px;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  background-color: rgba(0,0,21,.2);
+}
+.lNavbar ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lnavbar-items{
+  font-size: 20px;
+  color: rgba(255,255,255,.8);
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color .2s;
+}
+.lnavbar-items:hover{
+  background-color: #4638c2;
+  color: #fff;
+}
+
+.lnavbar-items span{
+  font-size: 14px;
+  text-align: center;
+  padding: 5px 20px;
+}
+
+.lnavbar-basliklar{
+  color:rgba(255,255,255,.8);
+  font-weight: 700;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  padding: .75rem 1rem;
+  font-size: 80%;
+}
+
+.tNavbar-DropMenu{
+  background-color: #2A2B36;
+}
+
+.tNavbar-DropMenu-Item{
+  color: rgba(255,255,255,.8);
+}
+
+.tNavbar-DropMenu-Item:hover{
+  color: #2A2B36;
+}
+
+.tNavbar-Bildirim{
+  position: absolute;
+  left: -3px;
+  top: -5px;
+  background-color: red;
+  color: white;
+  display: block;
+  padding: 2px 5px;
+  border-radius: 50px;
+  font-size: .7rem;
+}
+
+/* Popup */
+
+.popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #343a4066;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.popup-item{
+  display: block;
+  padding: 150px 225px;
+  border-radius: 10px;
+  background-color: #24252F;
+  position: relative;
+}
+
+.popup-exit-icon{
+  position: absolute;
+  color: #fff;
+  top: 25px;
+  right: 35px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity .2s;
+}
+
+.popup-exit-icon:hover{
+  opacity: 0.5;
+}
+
+.popup-exit-iconn{
+  pointer-events: none;
+}
